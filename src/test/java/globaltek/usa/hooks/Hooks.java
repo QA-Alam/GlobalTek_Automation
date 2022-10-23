@@ -9,7 +9,7 @@ import cucumber.api.java.Before;
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Hooks {
-	WebDriver driver;
+	public static WebDriver driver;
 
 	@Before
 	public void setUP() {
@@ -17,6 +17,7 @@ public class Hooks {
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.navigate().to("https://www.zoopla.co.uk/");
+		driver.findElement(By.linkText("Sign in")).click();
 		driver.findElement(By.xpath("//input[@id='email']")).sendKeys("alammohammed79@gmail.com");
 		driver.findElement(By.xpath("//input[@id='password']")).sendKeys("SAYEDawan2008@");
 		driver.findElement(By.xpath("//div[contains(text(),'Sign in')]")).click();

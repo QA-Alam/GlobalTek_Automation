@@ -1,19 +1,26 @@
 package globaltek.usa.stepDefintions;
 
+import org.openqa.selenium.By;
 import cucumber.api.java.en.*;
+import globaltek.usa.hooks.Hooks;
 
-public class For_Sale_StepDef {
-
+public class For_Sale_StepDef{
+	
+  
 	@Given("^User already loging the application$")
-	public void user_already_loging_the_application()  {
-	    
+	public void user_already_loging_the_application() throws InterruptedException  {
+		
+		String title = Hooks.driver.getTitle();
+	    System.out.println(title);
+	   
 	    
 	}
 	@When("^Users are able to click on for sale module$")
 	public void users_are_able_to_click_on_for_sale_module()  {
 	    
-	    
+		Hooks.driver.findElement(By.linkText("For sale")).click();
 	}
+	
 	@When("^Enter the desired location on the search box and hit enter$")
 	public void enter_the_desired_location_on_the_search_box_and_hit_enter()  {
 	    
