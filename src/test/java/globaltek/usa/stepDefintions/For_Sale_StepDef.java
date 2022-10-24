@@ -49,10 +49,8 @@ public class For_Sale_StepDef {
 	@Then("^Verify the stored price with expected price$")
 	public void verify_the_stored_price_with_expected_price() {
 
-		Assert.assertEquals(For_Sale_Page.value,
-				Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
-		System.out.println("My expected result is a : "
-				+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[2]")).getText());
+	Assert.assertEquals(For_Sale_Page.value, Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
+		System.out.println("My Actual result is a : " +For_Sale_Page.value +" My Expected result is a : "+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[2]")).getText());
 	}
 
 	@Then("^Verify the agent informations on the grid$")
