@@ -52,7 +52,7 @@ public class For_Sale_StepDef {
 		Assert.assertEquals(For_Sale_Page.value,
 				Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
 		System.out.println("My expected result is a : "
-				+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
+				+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[2]")).getText());
 	}
 
 	@Then("^Verify the agent informations on the grid$")
