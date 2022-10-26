@@ -6,7 +6,7 @@ public class For_Sale_Page {
 	public static String value;
 
 	public static void getPropertiesPrice2() {
-		List<WebElement> price = Hooks.driver.findElements(By.xpath("//*[@class='css-1w7anck eq9400e31']"));
+		List<WebElement> price = Hooks.driver.findElements(By.xpath("//*[@class='c-bTssUX']"));
 		System.out.println("Total number of properties  : " + price.size());
 		for (WebElement value : price) {
 			String priceValue = value.getText();
@@ -20,7 +20,7 @@ public class For_Sale_Page {
 	public static List<WebElement> selectProperties(int num) {
 		// First i take help from list interface, declare find elements & passing the
 		// dynamic xpath
-		List<WebElement> element = Hooks.driver.findElements(By.xpath("//*[@class='css-1w7anck eq9400e31']"));
+		List<WebElement> element = Hooks.driver.findElements(By.xpath("//*[@class='c-bTssUX']"));
 		// WaitHelper.waitVisibilityOfAllElements(element);
 
 		// I am use the looping concept for take the control of all the web elements

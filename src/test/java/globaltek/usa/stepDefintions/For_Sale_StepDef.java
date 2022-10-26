@@ -5,9 +5,11 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
-import cucumber.api.java.en.*;
 import globaltek.usa.hooks.For_Sale_Page;
 import globaltek.usa.hooks.Hooks;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 public class For_Sale_StepDef {
 
