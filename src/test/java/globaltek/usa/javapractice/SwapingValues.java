@@ -11,9 +11,9 @@ public class SwapingValues {
 		result = a + b;
 		// A value
 		a = result - a;
-		//System.out.println("After swapping a value is :  " + a);
+		System.out.println("After swapping a value is :  " + a);
 		b = result - b;
-		//System.out.println("After swapping b value is :  " + b);
+		System.out.println("After swapping b value is :  " + b);
 		
 	}
 
