@@ -15,9 +15,12 @@ public class For_Sale_StepDef {
 
 	@Given("^User already loging the application$")
 	public void user_already_loging_the_application() throws InterruptedException {
-
-		String title = Hooks.driver.getTitle();
-		System.out.println(title);
+         Thread.sleep(3000);
+		String actualResult = "Welcome back to your account";
+		WebElement ele = Hooks.driver.findElement(By.xpath("//*[text()='Welcome back to your account']"));
+		String expected = ele.getText();
+		Assert.assertEquals(actualResult, expected);
+		System.out.println("My Expected result is : " + expected);
 
 	}
 
@@ -50,14 +53,13 @@ public class For_Sale_StepDef {
 
 	@Then("^Verify the stored price with expected price$")
 	public void verify_the_stored_price_with_expected_price() {
-
-	Assert.assertEquals(For_Sale_Page.value, Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
-		System.out.println("My Actual result is a : " +For_Sale_Page.value +" My Expected result is a : "+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
+		Assert.assertEquals(For_Sale_Page.value, Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
+		System.out.println("My Actual result is a : " + For_Sale_Page.value + " My Expected result is a : "
+				+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[1]")).getText());
 	}
-
 	@Then("^Verify the agent informations on the grid$")
 	public void verify_the_agent_informations_on_the_grid() {
-		System.out.println("House details : "
-				+ Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[2]")).getText());
+		System.out.println(
+				"House details : " + Hooks.driver.findElement(By.xpath("(//*[@class='c-dPyNJo'])[2]")).getText());
 	}
 }

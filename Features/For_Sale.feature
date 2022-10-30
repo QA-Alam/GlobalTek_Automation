@@ -15,7 +15,17 @@ Feature: Users able to buy the properties
  Then Verify the stored price with expected price 
  And Verify the agent informations on the grid 
  
-  @Smoke  @Functional, @Regression
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ @Smoke  @Functional, @Regression
  Scenario Outline: Users can compare the price from diffrent properties
  Given User already loging the application 
  When Users are able to click on <modules> module

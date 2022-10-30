@@ -11,10 +11,12 @@ public class For_Sale_Page {
 		for (WebElement value : price) {
 			String priceValue = value.getText();
 			System.out.println("Price of properties  : " + priceValue);
-
 		}
 	}
 
+	
+	
+	
 	// How you find out specific element from web site
 	// how you can handle multiple element from DOM page
 	public static List<WebElement> selectProperties(int num) {
@@ -29,7 +31,7 @@ public class For_Sale_Page {
 			// require number
 			// Which element i want to click
 			if (i > num) { // 6
-				value = element.get(i).getText();
+				 value = element.get(i).getText();
 				System.out.println("Selected property number is :: " + i);
 				System.out.println("Selected property price is :: " + value);
 
