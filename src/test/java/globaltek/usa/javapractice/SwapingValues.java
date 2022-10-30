@@ -14,7 +14,20 @@ public class SwapingValues {
 		System.out.println("After swapping a value is :  " + a);
 		b = result - b;
 		System.out.println("After swapping b value is :  " + b);
+
 		
+		
+		int x = 10;
+		int y = 5;
+		 
+	    // Code to swap 'x' and 'y'
+	    x = x * y; // x now becomes 50
+	    y = x / y; // y becomes 10
+	    x = x / y; // x becomes 5
+	    
+		System.out.println("After swapping y value is :  " + y);
+		System.out.println("After swapping x value is :  " + x);
+	    
 	}
 
 }
