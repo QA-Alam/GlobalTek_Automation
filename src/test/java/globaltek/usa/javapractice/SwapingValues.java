@@ -16,14 +16,14 @@ public class SwapingValues {
 		System.out.println("After swapping b value is :  " + b);
 
 		
-		
-		int x = 10;
-		int y = 5;
+		// Without third variable
+		int x = 100;
+		int y = 200;
 		 
 	    // Code to swap 'x' and 'y'
-	    x = x * y; // x now becomes 50
-	    y = x / y; // y becomes 10
-	    x = x / y; // x becomes 5
+		    x = x + y;    //x = 100 + 200 = 300
+		    y = x - y;    //y = 300 - 200 = 100
+		    x = x - y;    //x = 300 - 100 = 200
 	    
 		System.out.println("After swapping y value is :  " + y);
 		System.out.println("After swapping x value is :  " + x);
