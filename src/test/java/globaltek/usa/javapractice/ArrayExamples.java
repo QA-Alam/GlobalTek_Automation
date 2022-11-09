@@ -1,5 +1,7 @@
 package globaltek.usa.javapractice;
 
+import java.util.Arrays;
+
 public class ArrayExamples {
 
 	// What is the array?
@@ -11,8 +13,9 @@ public class ArrayExamples {
 		int num = 10;
 		num = 20;
 		num = 30;
-		num = 40;
 		num = 50;
+		num = 400;
+		num = 40;
 		System.out.println(num);
 	}
 
@@ -55,7 +58,26 @@ public class ArrayExamples {
 				       { 60, 70, 80, 90 },
 				       { 110, 120, 130, 140, 150, 60, 70 } };
 
-		System.out.println(num[1][2] + " 2nd values " + num[2][0]);
+		//System.out.println(num[1][2] + " 2nd values " + num[2][0]);
+		
+		 for (int[] row : num){
+			    System.out.println(Arrays.toString(row));
+			   }
+		
+		 Arrays.stream(num).forEach((i) -> {
+		        Arrays.stream(i).forEach((j) -> System.out.print(j + " "));
+		        System.out.println();
+		    });
+		 
+		 
+	     // first for...each loop access the individual array
+	        // inside the 2d array
+	        for (int[] innerArray: num) {
+	            // second for...each loop access each element inside the row
+	            for(int data: innerArray) {
+	                System.out.println(data);
+	            }
+	        }
 		// System.out.println(num[2][0]);
 		// How do you get all the value from multi arrays?
 		// With the help nested loop
