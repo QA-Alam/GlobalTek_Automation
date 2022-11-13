@@ -59,13 +59,11 @@ public class ListClass {
 		System.out.println("This is my minimum value : " + min);
 
 	}
-	// How to find-out the second highest number from array
-
+// How to find-out the second highest number from array
 	public static void secondHighestNumber() {
-		// I have to declare an array
+// I have to declare an array
 		int[] number = { 1, 2, 3, 4, 5, 6 };
-		// With the help of array variable/object call length and store by reference
-		// variable
+// With the help of array variable/object call length and store by reference variable
 		int size = number.length;
 		Arrays.sort(number);
 		int res = number[size - 2];
