@@ -11,7 +11,7 @@ SQL> alter user hr identified by hr
                                                 (ArrayList, Vector, LinkedList, PriorityQueue, HashSet, LinkedHashSet, TreeSet).
 
                                                                           What is a framework in Java
-                                                                       It provides readymade architecture.
+                                                                       It provides ready made architecture.
                                                                   It represents a set of classes and interfaces.
                                                                                It is optional.
 
@@ -20,7 +20,7 @@ SQL> alter user hr identified by hr
        Property                              java.util.List                              java.util.Set                                   java.util.Map
                                        List allows to store duplicate              Set does not allow to store                  Map stores data in form of key-value pair 
 1,    Duplicate elements                   elements in java.                     duplicate elements in java.                    it does not allow to store duplicate keys             
-                                                                                                   but allows duplicate values in java.
+                                                                                                                                   but allows duplicate values in java.
 
                                     java.util.List is ordered collection      Most of the java.util.Set implementation        Most of the java.util.Map implementation 
                                     it maintain insertion order in java.      does not maintain insertion order.              does not maintain insertion order.

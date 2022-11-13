@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class OccurenceOfCharInString {
 
+	@SuppressWarnings("rawtypes")
 	public static void main(String[] args) {
 
 		String inputString = "Mohammedalam";

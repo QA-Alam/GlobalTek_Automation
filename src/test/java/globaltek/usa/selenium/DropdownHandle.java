@@ -54,12 +54,12 @@ public class DropdownHandle {
 		System.out.println("Total number of language  : " + suggestionResults.size());
 		for (WebElement result : suggestionResults) {
 			System.out.println("Languag name is : " + result.getText());
-			if (result.getText().equalsIgnoreCase("বাংলা") && result.getText().contains("বাংলা")) {
+		/*	if (result.getText().equalsIgnoreCase("বাংলা") && result.getText().contains("বাংলা")) {
 				System.out.println("Selected Languag name is  : " + result.getText());
 				Thread.sleep(300);
 				result.click();
 				break;
-			}
+			} */
 			
 		}
 
