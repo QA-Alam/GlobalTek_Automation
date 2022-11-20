@@ -23,7 +23,8 @@ public class ArrayExamples {
 	// Ans: There are many way i can declare an array
 	// And there are single dimension Array and multi-dimension Array
 
-	// What is the difference between single dimension Array and multi-dimension Array
+	// What is the difference between single dimension Array and multi-dimension
+	// Array
 	// Ans: single dimension [] can handle only single row or single column
 	// multi-dimension Array [] [] can handle multiple row and multiple columns
 
@@ -38,7 +39,7 @@ public class ArrayExamples {
 
 	// How to declare an arrays?
 	public static void declareSingledimensionArray() {
-		int num[] = {10, 20, 30, 40, 50, 39};
+		int num[] = { 10, 20, 30, 40, 50, 39 };
 
 		// How do you get specific value from an arrays?
 		// By index number
@@ -53,31 +54,28 @@ public class ArrayExamples {
 	}
 
 	public static void declareMultidimensionArray() {
-		int num[][] = { { 10, 20, 30, 40, 50, 80 },
-				       { 60, 70, 80, 90 }, 
-				       { 60, 70, 80, 90 },
-				       { 110, 120, 130, 140, 150, 60, 70 } };
+		int num[][] = { { 10, 20, 30, 40, 50, 80 }, { 60, 70, 80, 90 }, { 60, 70, 80, 90 },
+				{ 110, 120, 130, 140, 150, 60, 70 } };
 
-		//System.out.println(num[1][2] + " 2nd values " + num[2][0]);
-		
-		 for (int[] row : num){
-			    System.out.println(Arrays.toString(row));
-			   }
-		
-		 Arrays.stream(num).forEach((i) -> {
-		        Arrays.stream(i).forEach((j) -> System.out.print(j + " "));
-		        System.out.println();
-		    });
-		 
-		 
-	     // first for...each loop access the individual array
-	        // inside the 2d array
-	        for (int[] innerArray: num) {
-	            // second for...each loop access each element inside the row
-	            for(int data: innerArray) {
-	                System.out.println(data);
-	            }
-	        }
+		// System.out.println(num[1][2] + " 2nd values " + num[2][0]);
+
+		for (int[] row : num) {
+			System.out.println(Arrays.toString(row));
+		}
+
+		Arrays.stream(num).forEach((i) -> {
+			Arrays.stream(i).forEach((j) -> System.out.print(j + " "));
+			System.out.println();
+		});
+
+		// first for...each loop access the individual array
+		// inside the 2d array
+		for (int[] innerArray : num) {
+			// second for...each loop access each element inside the row
+			for (int data : innerArray) {
+				System.out.println(data);
+			}
+		}
 		// System.out.println(num[2][0]);
 		// How do you get all the value from multi arrays?
 		// With the help nested loop
@@ -87,8 +85,22 @@ public class ArrayExamples {
 	}
 
 	public static void main(String[] args) {
-		//ArrayExamples.declareSingledimensionArray();
-		ArrayExamples.declareMultidimensionArray();
+		// ArrayExamples.declareSingledimensionArray();
+		//ArrayExamples.declareMultidimensionArray();
+		getDuplicate();
+	}
+
+	public static void getDuplicate() {
+		String[] names = { "Java", "JavaScript", "Python", "C", "Ruby", "Java" };
+		for (int i = 0; i < names.length; i++) {
+			for (int j = i + 1; j < names.length; j++) {
+				if (names[i].equals(names[j])) {
+					// got the duplicate element } } }
+					System.out.println(names[j]);
+				}
+			}
+		}
+
 	}
 
 }

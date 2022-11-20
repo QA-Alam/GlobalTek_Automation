@@ -164,6 +164,23 @@ public class ListClass {
 			System.out.println("Not a Palindrome Number");
 		}
 	}
+	
+	public static void getNum() {
+		ArrayList<Integer> list=new ArrayList<>();
+        list.add(1);
+        list.add(1);
+        list.add(3);
+        list.add(4);
+        list.add(5);
+
+    for(int i =0; i < list.size(); i++) {
+         if (list.contains(list.get(i))) {
+             System.out.println(list.get(i)+" is duplicated");
+         }
+    }
+	}
+	
+	
 
 	public static void main(String[] args) {
 		// ListClass.removeDuplicate();
@@ -176,5 +193,6 @@ public class ListClass {
 		// getReverseStringWithOutFunction();
 		// getReverseStringFunction();
 		getPalindromeNumber();
+		getNum();
 	}
 }
