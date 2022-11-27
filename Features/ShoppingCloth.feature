@@ -1,4 +1,4 @@
-Feature: valid user can purchase the men jacket. 
+Feature: valid user can purchase the men jacket from eCommerce web-site. 
 	
 Description: "Online user can register luma E-commerce web-site to purchase"
 	            "return, deliver, exchange, clearance, sale, etc."

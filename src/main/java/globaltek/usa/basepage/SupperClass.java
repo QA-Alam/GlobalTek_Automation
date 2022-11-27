@@ -5,7 +5,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
@@ -20,11 +19,8 @@ public class SupperClass {
 	public static Logger logger;
 	public static WebDriver driver;
 	public static Properties prop;
-
-	public WebDriver getDriver() {
-		return driver;
-	}
-
+	
+	
 	public SupperClass() {
 		logger = Logger.getLogger("Test Lead Alam"); // Added logger
 		PropertyConfigurator.configure("Log4j.properties");// Added logger

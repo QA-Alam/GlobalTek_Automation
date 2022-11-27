@@ -1,6 +1,5 @@
 package globaltek.usa.elementpage;
 
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
@@ -8,9 +7,9 @@ import org.openqa.selenium.support.PageFactory;
 
 import globaltek.usa.basepage.SupperClass;
 
-public class ShoppingClothPage extends SupperClass{
+public class ShoppingClothPage extends SupperClass {
 
-	public ShoppingClothPage(WebDriver driver) {
+	public ShoppingClothPage() {
 		PageFactory.initElements(driver, this);
 	}
 
@@ -54,12 +53,17 @@ public class ShoppingClothPage extends SupperClass{
 	public WebElement getVerifyUserInfo() {
 		return verifyUserInfo;
 	}
-	
-	//(//*[@class='logged-in'])[1]
+
 	public void getLogin() {
+		logger.info("******** User is able to click on signin button *********");
 		getclickSignIn().click();
+		logger.info("******** User is able to enter user name *********");
 		getUserName().sendKeys(prop.getProperty("userName"));
+		logger.info("******** User is able to enter the password *********");
+
 		getpassWord().sendKeys(prop.getProperty("textPassword"));
+		logger.info("******** User is able to loging the application *********");
+
 		getclickclickLogIn().click();
 	}
 }
