@@ -1,0 +1,9 @@
+2022-11-26 21:34:08,211 - Test Lead Alam -INFO - ******** I am a chrome browser*********
+2022-11-26 21:34:09,360 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-11-26 21:34:09,383 - io.github.bonigarcia.wdm.WebDriverManager -INFO - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-11-26 21:34:16,472 - Test Lead Alam -INFO - 
+2022-11-26 21:34:16,472 - Test Lead Alam -INFO - ...........START AUTOMATION.............
+2022-11-26 21:34:16,473 - Test Lead Alam -INFO - 
+2022-11-26 21:34:20,232 - Test Lead Alam -INFO - 
+2022-11-26 21:34:20,232 - Test Lead Alam -INFO - ...........END AUTOMATION.............
+2022-11-26 21:34:20,232 - Test Lead Alam -INFO - 

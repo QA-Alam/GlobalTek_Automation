@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">	
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="globaltek.usa.myrunner.MyRunner"/>
-    </classes>
-  </test> <!-- Test -->
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Automation Test Suite">
+	<listeners>
+		<listener class-name="global.usa.listiner.TestListener" />
+	</listeners>
+	<test name="Luma functional test">
+		<classes>
+			<class name="globaltek.usa.myrunner.MyRunner" />
+		</classes>
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

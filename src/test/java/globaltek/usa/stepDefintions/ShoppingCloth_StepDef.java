@@ -3,74 +3,64 @@ package globaltek.usa.stepDefintions;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.*;
-import globaltek.usa.basepage.BasePage;
+import globaltek.usa.basepage.SupperClass;
 import globaltek.usa.elementpage.ShoppingClothPage;
 
-public class ShoppingCloth_StepDef extends BasePage {
+public class ShoppingCloth_StepDef extends SupperClass{
 	ShoppingClothPage pf;
 	
-	@Given("^User is already in-home page and verify user information$")
-	public void user_is_already_in_home_page_and_verify_user_information() {
-		pf = PageFactory.initElements(driver, ShoppingClothPage.class);
-		pf.getLogin();
+
+	@Given("^User already logged in the application and verify the user information on the landing page$")
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+	pf = PageFactory.initElements(driver, ShoppingClothPage.class);
+	pf.getLogin();  
+
 	}
 
-	@When("^User can select Jackets from men dropdown$")
-	public void user_can_select_Jackets_from_men_dropdown() {
-	    
-	    
-	}
-
-	@When("^User can verify Jupiter All-Weather Trainer is on the screen and click on it$")
-	public void user_can_verify_Jupiter_All_Weather_Trainer_is_on_the_screen_and_click_on_it() {
+	@When("^User should be able to select Jupiter All-Weather Trainer jacket from men module$")
+	public void user_should_be_able_to_select_Jupiter_All_Weather_Trainer_jacket_from_men_module() {
 	    
 	    
 	}
 
-	@When("^User can select the M and select the Green$")
-	public void user_can_select_the_M_and_select_the_Green() {
+	@When("^Verify the jacket name on the Jupiter All-Weather Trainer list$")
+	public void verify_the_jacket_name_on_the_Jupiter_All_Weather_Trainer_list() {
 	    
 	    
 	}
 
-	@When("^User can select the <Quantity >$")
-	public void user_can_select_the_Quantity() {
+	@When("^User should be able to select the M and Blue and (\\d+) then click on the add to cart$")
+	public void user_should_be_able_to_select_the_M_and_Blue_and_then_click_on_the_add_to_cart(int arg1) {
 	    
 	    
 	}
 
-	@When("^User can click on addToCart$")
-	public void user_can_click_on_addToCart() {
+	@When("^User should be able to click on the cart and checkout$")
+	public void user_should_be_able_to_click_on_the_cart_and_checkout() {
 	    
 	    
 	}
 
-	@When("^User can click on upper right corner cart and click on Checkout$")
-	public void user_can_click_on_upper_right_corner_cart_and_click_on_Checkout() {
+	@When("^User should be able to enter the shipping details and click on the Next$")
+	public void user_should_be_able_to_enter_the_shipping_details_and_click_on_the_Next() {
 	    
 	    
 	}
 
-	@When("^User can add address and click on ship here$")
-	public void user_can_add_address_and_click_on_ship_here() {
+	@When("^User should be able to verify the shipping address and place the order$")
+	public void user_should_be_able_to_verify_the_shipping_address_and_place_the_order() {
 	    
 	    
 	}
 
-	@When("^User can select shipping method and click on next$")
-	public void user_can_select_shipping_method_and_click_on_next() {
+	@Then("^User should be able to verify the order number and get text on the screen \"([^\"]*)\"$")
+	public void user_should_be_able_to_verify_the_order_number_and_get_text_on_the_screen(String arg1) {
 	    
 	    
 	}
 
-	@When("^User able to click on place order$")
-	public void user_able_to_click_on_place_order() {
-	    
-	    
-	}
-
-	@Then("^User can verify the Your order number and text on the screen \"([^\"]*)\"$")
-	public void user_can_verify_the_Your_order_number_and_text_on_the_screen(String text) {
+	@When("^User should be able to select the S and Green and (\\d+) then click on the add to cart$")
+	public void user_should_be_able_to_select_the_S_and_Green_and_then_click_on_the_add_to_cart(int arg1) {
 	    
 	    
 	}

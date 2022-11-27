@@ -1,23 +1,35 @@
 package globaltek.usa.hooks;
 
+
+
+import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
-import globaltek.usa.basepage.BasePage;
-import globaltek.usa.elementpage.ShoppingClothPage;
+import globalteck.usa.utility.CommonUtil;
+import globaltek.usa.basepage.SupperClass;
 
-public class Hooks extends ShoppingClothPage {
+
+public class Hooks extends SupperClass {
+    
+	public Scenario scenario;
 
 	@Before
-	public void setUP() throws InterruptedException {
-		System.out.println(" >>>>>>> Automation Start<<<<<< ");
-		BasePage.getAutomationStart();
-		
-
+	public void suiteSetup(Scenario scenario)  {
+		this.scenario = scenario; 
+		initialization();
+		logger.info("");
+		logger.info("...........START AUTOMATION.............");
+		logger.info("");
 	}
 
 	@After
-	public void tearDown() {
-		System.out.println(" >>>>>>> Automation End <<<<<< ");
-		driver.quit();
+	public void tearDown(Scenario scenario) {
+		if (scenario.isFailed()) {
+		CommonUtil.getScreenshot(driver, scenario);
+		}		driver.quit();
+		logger.info("");
+		logger.info("...........END AUTOMATION.............");
+		logger.info("");
 	}
+
 }

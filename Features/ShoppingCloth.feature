@@ -1,25 +1,20 @@
-Feature: Users able to login application and parches the cloth
-
-@Sanity 
-Scenario Outline: Users can login application with valid username an password 
-	Given User is already in-home page and verify user information 
-	When User can select Jackets from men dropdown 
-	And User can verify <Sweater> is on the screen and click on it 
-	And User can select the <size> and select the <color> 
-	And User can select the <Quantity > 
-	And User can click on addToCart 
-	And User can click on upper right corner cart and click on Checkout 
-	And User can add address and click on ship here 
-	And User can select shipping method and click on next 
-	And User able to click on place order 
-	Then User can verify the Your order number and text on the screen "Thank you for your purchase!" 
+Feature: valid user can purchase the men jacket. 
 	
+Description: "Online user can register luma E-commerce web-site to purchase"
+	            "return, deliver, exchange, clearance, sale, etc."
+@Sanity    
+Scenario Outline: User can login to the application with valid credentials and 
+	                       purchase the specific men's jacket.   
+                  
+	Given User already logged in the application and verify the user information on the landing page 
+	When User should be able to select <specific> jacket from men module 
+	And Verify the jacket name on the <specific> list 
+	And User should be able to select the <size> and <color> and <quantity> then click on the add to cart 
+	And User should be able to click on the cart and checkout 
+	And User should be able to enter the shipping details and click on the Next 
+	And User should be able to verify the shipping address and place the order 
+	Then User should be able to verify the order number and get text on the screen "Thank you for your purchase!"
 	Examples: 
-	|           Sweater         |size|color|Quantity|
-	|Jupiter All-Weather Trainer|  M |Green|     1  |
-	
-	
-	
-	
-	
- 
+		|            specific          | size | color | quantity |         
+		|Jupiter All-Weather Trainer   |  M   | Blue  |    1     |
+
