@@ -14,8 +14,7 @@ public class Hooks extends SupperClass {
 	public Scenario scenario;
 
 	@Before
-	public void suiteSetup(Scenario scenario)  {
-		this.scenario = scenario; 
+	public void suiteSetup()  { 
 		initialization();
 		logger.info("");
 		logger.info("...........START AUTOMATION.............");

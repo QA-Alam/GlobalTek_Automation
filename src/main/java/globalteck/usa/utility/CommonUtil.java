@@ -1,6 +1,8 @@
 package globalteck.usa.utility;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
@@ -13,6 +15,10 @@ import java.util.Set;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.log4j.Level;
+import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.ss.usermodel.WorkbookFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -42,6 +48,37 @@ public class CommonUtil extends SupperClass {
 
 	private static final String ACTION = "arguments[0].click();";
 	static String projectPath = "user.dir";
+	public static String TESTDATA_SHEET_PATH = "./TestData/testData.xlsx";
+	static Workbook book;
+	static Sheet sheet;
+	static JavascriptExecutor js;
+
+	public static Object[][] getTestData(String sheetName) {
+		FileInputStream file = null;
+		try {
+			file = new FileInputStream(TESTDATA_SHEET_PATH);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+		try {
+			book = WorkbookFactory.create(file);
+		} catch (InvalidFormatException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		sheet = book.getSheet(sheetName);
+		Object[][] data = new Object[sheet.getLastRowNum()][sheet.getRow(0).getLastCellNum()];
+		// System.out.println(sheet.getLastRowNum() + "--------" +
+		// sheet.getRow(0).getLastCellNum());
+		for (int i = 0; i < sheet.getLastRowNum(); i++) {
+			for (int k = 0; k < sheet.getRow(0).getLastCellNum(); k++) {
+				data[i][k] = sheet.getRow(i + 1).getCell(k).toString();
+				// System.out.println(data[i][k]);
+			}
+		}
+		return data;
+	}
 
 	// static WebDriver driver;
 	public static void mouseHoverElement(WebElement hoverElement) {
@@ -109,15 +146,12 @@ public class CommonUtil extends SupperClass {
 		return destination;
 	}
 
-	public static void captureScreenshot(WebDriver driver, String screenshotName) {
-		try {
+	public static void captureScreenshot(WebDriver driver, String screenshotName) throws IOException {
+
 			TakesScreenshot ts = (TakesScreenshot) driver;
 			File source = ts.getScreenshotAs(OutputType.FILE);
 			FileHandler.copy(source, new File("./Screenshots/" + screenshotName + ".png"));
-			System.out.println("Screenshot taken");
-		} catch (Exception e) {
-			System.out.println("Exception while taking screenshot " + e.getMessage());
-		}
+	
 	}
 
 	public static void WindowHandle() throws Throwable {
@@ -347,6 +381,12 @@ public class CommonUtil extends SupperClass {
 	public static WebElement waitForVisibility(WebElement element) {
 		return getWebDriverWait().until(ExpectedConditions.visibilityOf(element));
 	}
+	
+	
+	
+	
+	
+	
 
 	public void pageLoad(int time) {
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
@@ -379,11 +419,13 @@ public class CommonUtil extends SupperClass {
 	}
 
 	public static void dropDownMenu(WebElement ele, String value) {
-		List<WebElement> myList = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOfAllElements(ele));
+		List<WebElement> myList = new WebDriverWait(driver, Duration.ofSeconds(30))
+				.until(ExpectedConditions.visibilityOfAllElements(ele));
 		for (WebElement myOptions : myList) {
 			if (myOptions.getText().contains(value)) {
 				System.out.println("Selected value is a : " + myOptions.getText());
-				new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(myOptions));
+				new WebDriverWait(driver, Duration.ofSeconds(30))
+						.until(ExpectedConditions.elementToBeClickable(myOptions));
 				myOptions.click();
 				break;
 			}
@@ -428,16 +470,26 @@ public class CommonUtil extends SupperClass {
 			}
 		}
 	}
+
 	// What is iframe?
-	// iframe is a document overwrapping the project. Before we click any operation on the
+	// iframe is a document overwrapping the project. Before we click any operation
+	// on the
 	// web-page with any operation, we need to handle the iframe
 	// How to handle iframe in selenium?
 	// I can handle many way like ->
-	// 1. using explicit wait and frame to beavailable and switch to it method and pass frame name
+	// 1. using explicit wait and frame to beavailable and switch to it method and
+	// pass frame name
 	// 2. using driver.switchto.frame method and pass the tag name
 	public static void waitForFrameAndSwitch(String frameDetails) {
-		new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameDetails));
+		new WebDriverWait(driver, Duration.ofSeconds(30))
+				.until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(frameDetails));
 	}
+
+	
+	
+	
+	
+	
 	public static void handleframe() {
 		driver.switchTo().frame(driver.findElement(By.tagName("iframe")));
 	}
@@ -452,6 +504,7 @@ public class CommonUtil extends SupperClass {
 			}
 		}
 	}
+
 	public void selectFromList(String option) {
 		// Use any locator by which select drop down node could be found
 		WebElement element = driver.findElement(By.xpath("//select[@id='select1']"));
@@ -473,25 +526,30 @@ public class CommonUtil extends SupperClass {
 
 	// element click by index number
 	public void elementsClickByIndex(List<WebElement> ele, int num) {
-		List<WebElement> element = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOfAllElements(ele));
+		List<WebElement> element = new WebDriverWait(driver, Duration.ofSeconds(30))
+				.until(ExpectedConditions.visibilityOfAllElements(ele));
 		for (int i = 0; i < element.size(); i++) {
 			if (i > num) {
 				System.out.println(
 						"clicked element number : " + i + " & Name of the value : " + element.get(i).getText());
-				new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(element.get(i)));
+				new WebDriverWait(driver, Duration.ofSeconds(30))
+						.until(ExpectedConditions.elementToBeClickable(element.get(i)));
 				element.get(i).click();
 				break;
 			}
 		}
 
 	}
+
 	// element click by name of value
 	public void elementsClickByValue(List<WebElement> ele, String value) {
-		List<WebElement> element = new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.visibilityOfAllElements(ele));
+		List<WebElement> element = new WebDriverWait(driver, Duration.ofSeconds(30))
+				.until(ExpectedConditions.visibilityOfAllElements(ele));
 		for (WebElement myValue : element) {
 			if (myValue.getText().contains(value)) {
 				System.out.println("Selected value details : " + myValue.getText());
-				new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.elementToBeClickable(myValue));
+				new WebDriverWait(driver, Duration.ofSeconds(30))
+						.until(ExpectedConditions.elementToBeClickable(myValue));
 				myValue.click();
 				break;
 			}

@@ -11,3 +11,151 @@
 2022-11-27 13:41:50,480 [main] INFO Test Lead Alam - 
 2022-11-27 13:41:50,481 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
 2022-11-27 13:41:50,482 [main] INFO Test Lead Alam - 
+2022-11-27 14:03:17,183 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-11-27 14:03:17,867 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-11-27 14:03:17,904 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-11-27 14:03:28,172 [main] INFO Test Lead Alam - 
+2022-11-27 14:03:28,183 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-11-27 14:03:28,187 [main] INFO Test Lead Alam - 
+2022-11-27 14:03:28,707 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-11-27 14:03:50,740 [main] INFO Test Lead Alam - ******** I am a edge browser*********
+2022-11-27 14:03:52,216 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using msedgedriver 107.0.1418.56 (resolved driver for Edge 107)
+2022-11-27 14:03:52,244 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.edge.driver as C:\Users\moham\.cache\selenium\msedgedriver\win64\107.0.1418.56\msedgedriver.exe
+2022-11-27 14:04:00,908 [main] INFO Test Lead Alam - 
+2022-11-27 14:04:00,908 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-11-27 14:04:00,912 [main] INFO Test Lead Alam - 
+2022-11-27 14:04:01,474 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-11-27 14:04:03,142 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-11-27 14:04:03,621 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-11-27 14:04:03,892 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-11-27 14:04:07,638 [main] INFO Test Lead Alam - 
+2022-11-27 14:04:07,639 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-11-27 14:04:07,640 [main] INFO Test Lead Alam - 
+2022-11-27 14:13:14,841 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-11-27 14:13:15,520 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-11-27 14:13:15,554 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-11-27 14:13:24,305 [main] INFO Test Lead Alam - 
+2022-11-27 14:13:24,306 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-11-27 14:13:24,306 [main] INFO Test Lead Alam - 
+2022-11-27 14:13:24,696 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-11-27 14:13:25,862 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-11-27 14:13:26,265 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-11-27 14:13:26,411 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-11-27 14:13:28,079 [main] INFO Test Lead Alam - 
+2022-11-27 14:13:28,080 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-11-27 14:13:28,080 [main] INFO Test Lead Alam - 
+2022-11-28 18:32:13,465 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-11-28 18:32:14,895 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-11-28 18:32:14,933 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-11-28 18:32:23,771 [main] INFO Test Lead Alam - 
+2022-11-28 18:32:23,772 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-11-28 18:32:23,772 [main] INFO Test Lead Alam - 
+2022-11-28 18:32:24,091 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-11-28 18:32:25,481 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-11-28 18:32:25,802 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-11-28 18:32:25,965 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-11-28 18:32:27,915 [main] INFO Test Lead Alam - 
+2022-11-28 18:32:27,916 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-11-28 18:32:27,917 [main] INFO Test Lead Alam - 
+2022-11-28 20:29:04,766 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-11-28 20:29:06,003 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-11-28 20:29:06,052 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-11-28 20:29:13,172 [main] INFO Test Lead Alam - 
+2022-11-28 20:29:13,173 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-11-28 20:29:13,174 [main] INFO Test Lead Alam - 
+2022-11-28 20:29:13,504 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-11-28 20:29:14,527 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-11-28 20:29:14,862 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-11-28 20:29:14,981 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-11-28 20:29:16,719 [main] INFO Test Lead Alam - 
+2022-11-28 20:29:16,720 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-11-28 20:29:16,721 [main] INFO Test Lead Alam - 
+2022-12-01 21:05:38,499 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-12-01 21:05:39,906 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 107.0.5304.62 (resolved driver for Chrome 107)
+2022-12-01 21:05:39,962 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\107.0.5304.62\chromedriver.exe
+2022-12-01 21:05:47,425 [main] INFO Test Lead Alam - 
+2022-12-01 21:05:47,426 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-01 21:05:47,427 [main] INFO Test Lead Alam - 
+2022-12-01 21:05:47,742 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-12-01 21:05:48,933 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-12-01 21:05:49,252 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-12-01 21:05:49,405 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-12-01 21:05:51,387 [main] INFO Test Lead Alam - 
+2022-12-01 21:05:51,387 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-01 21:05:51,389 [main] INFO Test Lead Alam - 
+2022-12-03 18:28:34,287 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-12-03 18:28:36,553 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-03 18:28:36,620 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Reading https://chromedriver.storage.googleapis.com/ to seek chromedriver
+2022-12-03 18:28:37,269 [main] INFO io.github.bonigarcia.wdm.online.Downloader - Downloading https://chromedriver.storage.googleapis.com/108.0.5359.71/chromedriver_win32.zip
+2022-12-03 18:28:38,250 [main] INFO io.github.bonigarcia.wdm.online.Downloader - Extracting driver from compressed file chromedriver_win32.zip
+2022-12-03 18:28:38,497 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-03 18:28:49,711 [main] INFO Test Lead Alam - 
+2022-12-03 18:28:49,711 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-03 18:28:49,712 [main] INFO Test Lead Alam - 
+2022-12-03 18:28:50,068 [main] INFO Test Lead Alam - ******** User is able to click on signin button *********
+2022-12-03 18:28:51,356 [main] INFO Test Lead Alam - ******** User is able to enter user name *********
+2022-12-03 18:28:51,795 [main] INFO Test Lead Alam - ******** User is able to enter the password *********
+2022-12-03 18:28:51,947 [main] INFO Test Lead Alam - ******** User is able to loging the application *********
+2022-12-03 18:28:55,048 [main] INFO Test Lead Alam - 
+2022-12-03 18:28:55,052 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-03 18:28:55,053 [main] INFO Test Lead Alam - 
+2022-12-03 18:31:30,295 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-12-03 18:31:30,978 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-03 18:31:31,022 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-03 18:31:37,025 [main] INFO Test Lead Alam - 
+2022-12-03 18:31:37,026 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-03 18:31:37,027 [main] INFO Test Lead Alam - 
+2022-12-03 18:31:39,027 [main] INFO Test Lead Alam - 
+2022-12-03 18:31:39,028 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-03 18:31:39,029 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:08,084 [main] INFO Test Lead Alam - ******** I am a headless mode chrome browser*********
+2022-12-03 18:32:08,894 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-03 18:32:08,936 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-03 18:32:16,061 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:16,062 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-03 18:32:16,063 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:18,419 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:18,420 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-03 18:32:18,421 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:42,816 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-03 18:32:43,559 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-03 18:32:43,608 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-03 18:32:53,254 [main] INFO Test Lead Alam - 
+2022-12-03 18:32:53,255 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-03 18:32:53,255 [main] INFO Test Lead Alam - 
+2022-12-03 18:34:28,568 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-03 18:34:29,336 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-03 18:34:29,383 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-03 18:34:39,674 [main] INFO Test Lead Alam - 
+2022-12-03 18:34:39,675 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-03 18:34:39,675 [main] INFO Test Lead Alam - 
+2022-12-09 22:05:28,155 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-09 22:05:29,866 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-09 22:05:29,937 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-09 22:05:39,545 [main] INFO Test Lead Alam - 
+2022-12-09 22:05:39,546 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-09 22:05:39,547 [main] INFO Test Lead Alam - 
+2022-12-18 16:51:28,859 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-18 16:51:30,150 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-18 16:51:30,184 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-18 16:51:39,632 [main] INFO Test Lead Alam - 
+2022-12-18 16:51:39,633 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-18 16:51:39,633 [main] INFO Test Lead Alam - 
+2022-12-23 19:43:19,787 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-23 19:43:21,420 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-23 19:43:21,482 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-23 19:43:30,530 [main] INFO Test Lead Alam - 
+2022-12-23 19:43:30,531 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-23 19:43:30,532 [main] INFO Test Lead Alam - 
+2022-12-23 19:43:35,910 [main] INFO Test Lead Alam - 
+2022-12-23 19:43:35,912 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-23 19:43:35,913 [main] INFO Test Lead Alam - 
+2022-12-24 10:21:41,446 [main] INFO Test Lead Alam - ******** I am a chrome browser*********
+2022-12-24 10:21:42,371 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 108.0.5359.71 (resolved driver for Chrome 108)
+2022-12-24 10:21:42,397 [main] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\moham\.cache\selenium\chromedriver\win32\108.0.5359.71\chromedriver.exe
+2022-12-24 10:21:48,566 [main] INFO Test Lead Alam - 
+2022-12-24 10:21:48,567 [main] INFO Test Lead Alam - ...........START AUTOMATION.............
+2022-12-24 10:21:48,567 [main] INFO Test Lead Alam - 
+2022-12-24 10:21:50,578 [main] INFO Test Lead Alam - 
+2022-12-24 10:21:50,579 [main] INFO Test Lead Alam - ...........END AUTOMATION.............
+2022-12-24 10:21:50,580 [main] INFO Test Lead Alam - 

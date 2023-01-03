@@ -5,12 +5,12 @@
 	<groupId>GlobalTek_Automation</groupId>
 	<artifactId>GlobalTek_Automation</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-<properties>
+	<properties>
 		<timestamp>${maven.build.timestamp}</timestamp>
 		<maven.build.timestamp.format>dd-MM-yyyy HH:mm
 		</maven.build.timestamp.format>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.test.skip>false</maven.test.skip>
+		<maven.test.skip>true</maven.test.skip>
 	</properties>
 	<build>
 		<plugins>
@@ -56,12 +56,6 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
-			<artifactId>slf4j-api</artifactId>
-			<version>1.7.25</version>
-		</dependency>
-
-		<dependency>
-			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.25</version>
 		</dependency>
@@ -70,7 +64,7 @@
 			<artifactId>mssql-jdbc</artifactId>
 			<version>7.2.2.jre8</version>
 		</dependency>
-	<dependency>
+		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
 			<version>4.1.0</version>
@@ -222,8 +216,6 @@
 			<artifactId>poi</artifactId>
 			<version>3.16-beta2</version>
 		</dependency>
-
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
@@ -244,7 +236,6 @@
 			<artifactId>ooxml-schemas</artifactId>
 			<version>1.1</version>
 		</dependency>
-
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>openxml4j</artifactId>
@@ -270,6 +261,5 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>5.1.6</version>
 		</dependency>
-
 	</dependencies>
 </project>

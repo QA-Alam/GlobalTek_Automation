@@ -182,6 +182,16 @@ demo2=new StringBuilder(“Bye”);
  \  |
   \-testng.xml
     +---Extra tools Jira, ALM, Github & Jenkins
+    
+    
+    
+    
+    
+    
+    username smarttechqa_SQLLogin_1
+    password 9ryk2qzaeu
+    server name techshop.mssql.somee.com
+    
 
 
 

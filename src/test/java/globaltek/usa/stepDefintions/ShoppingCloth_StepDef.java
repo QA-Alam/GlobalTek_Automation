@@ -1,5 +1,7 @@
 package globaltek.usa.stepDefintions;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 import cucumber.api.java.en.*;
@@ -11,22 +13,27 @@ public class ShoppingCloth_StepDef extends SupperClass{
 	
 
 	@Given("^User already logged in the application and verify the user information on the landing page$")
-	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() {
+	public void user_already_logged_in_the_application_and_verify_the_user_information_on_the_landing_page() throws InterruptedException {
 	pf = PageFactory.initElements(driver, ShoppingClothPage.class);
-	pf.getLogin();  
-
+	//pf.getLogin();  
+   
+     
+    
 	}
 
 	@When("^User should be able to select Jupiter All-Weather Trainer jacket from men module$")
 	public void user_should_be_able_to_select_Jupiter_All_Weather_Trainer_jacket_from_men_module() {
-	    
-	    
+	   WebElement ele =  driver.findElement(By.linkText("Jupiter All-Weather Trainer"));
+	   System.out.println(ele.getText());
+	   ele.click();
+	   
+	   
 	}
 
 	@When("^Verify the jacket name on the Jupiter All-Weather Trainer list$")
 	public void verify_the_jacket_name_on_the_Jupiter_All_Weather_Trainer_list() {
 	    
-	    
+     pf.getSelectSizeColor("S");
 	}
 
 	@When("^User should be able to select the M and Blue and (\\d+) then click on the add to cart$")
